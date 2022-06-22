@@ -1,0 +1,897 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MetaXgaming</title>
+    <meta name="author" content="Angfuzsoft">
+    <meta name="description" content="metaXgaming">
+    <meta name="keywords" content="metaXgaming">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .span {
+            display: block;
+            padding-left: 27px !important;
+        }
+        
+        @media (max-width:767px) {
+            .d-sm-block {
+                display: block !important;
+            }
+            .span {
+                display: block;
+                padding-left: 27px !important;
+            }
+        }
+        
+        .rightArrow {
+            height: 40px;
+            width: 40px;
+            margin-right: 40px;
+            position: relative;
+        }
+        
+        .rightArrow::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background: url(./assets/img/nexticon.png) no-repeat top;
+        }
+        
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+        
+        .reveal.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vs-cursor"></div>
+    <div id="sidebar" draggable="true" style="transform: rotate(-90deg);">
+        <div class="list">
+            <div class="item"><a href="./buyMXG.html" style="font-size: 12px;">Join presale</a></div>
+        </div>
+    </div>
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center"><button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img style="width: 45%;" src="assets/img/logo.png" alt="metaXgaming"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#howtoplay">How to Play</a></li>
+                    <li><a href="#road">Roadmap</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
+                    <li><a href="#gametokenomics">Game Tokenomics</a></li>
+                    <li><a href="./assets/metaxgaming.pdf" target="_blank">Wizz Paper</a></li>
+                    <li><a href="#smartcontract">Smart Contract</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./buyMXG.html">Buy MXG</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header class="vs-header header-layout3">
+        <div class="container" style="padding: 0px; margin: 0;">
+            <div class="header-top d-none d-lg-block">
+                <div class="row justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-auto">
+                        <div class="header-links text-white">
+                            <ul>
+                                <li>
+                                    <p class="header-text" style="font-family: 'game-font';">Welcome to <span class="fw-semibold"><span
+                                                class="text-theme2 text-uppercase">MetaXgaming</span> </span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-links text-white">
+                            <ul>
+                                <li>
+                                    <a href="tel:012345678922" class="header-number">
+                                        <i class="fa-duotone fa-envelopes-bulk"></i>Support@metaxgaming.io</a>
+                                </li>
+                                <li>
+                                    <div class="multi-social">
+                                        <a href="https://twitter.com/Meta_X_Gaming?t=lmZQwN2t_IAYjII7WJjagQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://t.me/MetaXgaming" target="_blank"><i
+                                                class="fab fa-telegram"></i></a>
+                                        <a href="https://discord.gg/b4c5gawrcr" target="_blank"><i
+                                                class="fab fa-discord"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <div class="container" style="padding: 0px; margin: 0;">
+                    <div class="header-menu-area">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo"><img src="assets/img/logo.png" width="70" height="70" alt="Logo"></div>
+                            </div>
+                            <div class="col-auto">
+                                <nav class="main-menu menu-style2 d-none d-lg-block">
+                                    <ul>
+                                        <li><a href="#mission">Mission</a></li>
+                                        <li><a href="#howtoplay">How to play</a></li>
+                                        <li><a href="#road">Roadmap</a></li>
+                                        <li><a href="#tokenomics">tokenomics</a></li>
+                                        <li><a href="#gametokenomics">Game tokenomics</a></li>
+                                        <li><a href="./assets/metaxgaming.pdf" target="_blank">Wizz Paper</a></li>
+
+                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="./buyMXG.html" style="font-size: 15px;"> Buy MXG</a></li>
+                                    </ul>
+                                </nav>
+                                <button type="button" class="vs-menu-toggle d-inline-block d-lg-none"><i
+                                        class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="vs-hero-wrapper">
+        <div class="vs-carousel hero-box-slider" data-slide-show="1" data-md-slide-show="1" data-fade="true" data-dots="true">
+            <div class="hero-slider-box" data-overlay="title" data-opacity="8" data-bg-src="assets/img/pubg2.jpg">
+                <div class="hero-dots-shape" data-bg-src="assets/img/shape/home-2-dots-1.png"></div>
+                <div class="slider">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="hero-content z-index-step1">
+                                    <div class="hero-logo-icon" data-ani="slideindown" data-ani-delay="0.4s">
+                                        <img src="assets/img/cropedLogo2 (2).gif" alt="metaXgaming">
+                                    </div><span class="hero-sub-title text-theme2" data-ani="slideindown" data-ani-delay="0.2s">#world class Token</span>
+                                    <h3 class="hero-title text-white" data-ani="slideindown" data-ani-delay="0.2s">
+                                        Blockchain is moving beyond cryptocurrency Token</h3>
+                                    <div class="row justify-content-center" data-ani="fadein" data-ani-delay="0.3s">
+                                        <div class="col-lg-11 col-xl-10">
+                                            <p class="hero-text text-white mb-0">MetaXgaming cares about it's community and is not going to make them wait for this awesome & unique experience
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slider-box" data-overlay="title" data-opacity="8" data-bg-src="assets/img/pubg5.jpg">
+                <div class="hero-dots-shape" data-bg-src="assets/img/shape/home-2-dots-1.png"></div>
+                <div class="slider">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="hero-content z-index-step1">
+                                    <div class="hero-logo-icon" data-ani="slideindown" data-ani-delay="0.4s">
+                                        <img src="assets/img/cropedLogo2 (2).gif" alt="Team Logo">
+                                    </div><span class="hero-sub-title text-theme2" data-ani="slideindown" data-ani-delay="0.2s">#Top Ranking</span>
+                                    <h3 class="hero-title text-white" data-ani="slideindown" data-ani-delay="0.2s">
+                                        The game is based on Binance blockchain technology</h3>
+                                    <div class="row justify-content-center" data-ani="fadein" data-ani-delay="0.3s">
+                                        <div class="col-lg-11 col-xl-10">
+                                            <p class="hero-text text-white mb-0" style="font-weight: 500;">Due to the transparency and security of blockchain, the MetaXgaming is completely fair and without any third-party involvement</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slider-box" data-overlay="title" data-opacity="8" data-bg-src="assets/img/pubg7.jpg">
+                <div class="hero-dots-shape" data-bg-src="assets/img/shape/home-2-dots-1.png"></div>
+                <div class="slider">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="hero-content z-index-step1">
+                                    <div class="hero-logo-icon" data-ani="slideindown" data-ani-delay="0.4s">
+                                        <img src="assets/img/cropedLogo2 (2).gif" alt="Team Logo">
+                                    </div>
+                                    <span class="hero-sub-title text-theme2" data-ani="slideindown" data-ani-delay="0.2s">#Master Of game</span>
+                                    <h3 class="hero-title text-white" data-ani="slideindown" data-ani-delay="0.2s">
+                                        MetaXgaming is a new blockchain cryptocurrency token</h3>
+                                    <div class="row justify-content-center" data-ani="fadein" data-ani-delay="0.3s">
+                                        <div class="col-lg-11 col-xl-10">
+                                            <p class="hero-text text-white mb-0">It was launched recently in the market. Experts are thinking about the rapid increase in the value of the MetaXgaming token</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <div id="mission" data-overlay="title" data-opacity="95">
+        <div class="parallax" data-bg-class="bg-title" style="height: 999.75px;" data-parallax-image="assets/img/bg/video-box-1-1.jpg" style="position: static;"></div>
+        <section class="vs-video-wrapper" style="padding: 0px 0px;">
+            <div class="container">
+                <div class="title-area reveal" style="position: relative; z-index: 10000; padding-top: 25px;"><span class="sub-title text-uppercase">#MetaXgaming</span>
+                    <h2 class="sec-title text-white">Mission</h2>
+                    <!-- <h2 class="sec-title-style2">upcoming game</h2> -->
+                    <div class="sec-shape">
+                        <div class="sec-shape_bar"></div>
+                        <div class="sec-shape_bar"></div>
+                        <div class="sec-shape_bar"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-mg-6 col-sm-12">
+                        <div class="release-card mb-20 reveal">
+                            <div class="release-card_img">
+                                <!-- <img src="assets/img/release/released-game-1-1.jpg" alt="Released Image"> -->
+                            </div>
+                            <div class="release-card_content" style="display: flex; align-items: start; justify-content: start;  flex-direction: column;">
+                                <p class="release-card_text text-light-white text-justify">The MetaXgaming team will develop planet "MetaX" where players can own virtual land, design and create various buildings and structures, fight for survival and craft a diverse set of items to be sold and traded on the open
+                                    markets as NFTs.
+                                </p>
+                                <p class="release-card_text text-light-white text-justify"> The MetaXgaming team will develop a set of in-game market systems separately in which user can freely generate NFTs and can easily sell them at in game NFT marketplace. MetaXgaming team will also develop MMO like Battlegrounds,
+                                    Racing games and Arena war games where players will experience the real thrill playing with their Avatar and winners will be rewarded with MXG token.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-mg-6 col-sm-12">
+                        <div class="release-card mb-lg-20 reveal">
+                            <div class="release-card_img" style="display: flex; justify-content: center; align-items: center;">
+                                <img style="width: 70%;" src="assets/img/cropedLogo2.gif" alt="Released Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vs-video-wrapper" style="padding: 20px 0px;">
+            <div class="container z-index-common">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="vs-carousel" data-slide-show="1" data-md-slide-show="1" id="slideLink1" style="display: flex; justify-content: center; align-items: center;" data-focuson-select="true" data-center-mode="true" data-asnavfor="#slideLink2">
+                            <div class="slide reveal" style="width: 650px;">
+                                <video style="object-fit: cover; border-radius: 7px;" loop preload='metadata' controls autoplay>
+                                    <source src="./assets/video/metaxgaming.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Video Section -->
+    <!-- Video Section -->
+    <!-- <div data-overlay="title" data-opacity="95">
+        <div class="parallax" data-bg-class="" data-parallax-image="assets/img/bg/video-box-1-1.jpg" style="position: static;"></div>
+        <section class="vs-video-wrapper" style="padding: 20px 0px;">
+            <div class="container z-index-common">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="vs-carousel" data-slide-show="1" data-md-slide-show="1" id="slideLink1" style="display: flex; justify-content: center; align-items: center;"
+                            data-focuson-select="true" data-center-mode="true" data-asnavfor="#slideLink2">
+                            <div class="slide" style="width: 650px;">
+                                <video style="object-fit: cover; border-radius: 7px;"  loop
+                                    preload='metadata' controls  autoplay>
+                                    <source src="./assets/video/metaxgaming.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> -->
+    <!-- Video Section -->
+
+    <!-- How to play -->
+    <div data-overlay="title" data-opacity="7">
+        <div class="parallax" data-bg-class="bg-title" data-parallax-image="assets/img/bg/about-bg-2-1.jpg" style="position: static; height: 620px;"></div>
+
+        <section id="howtoplay" class="vs-about-wrapper" style="padding: 20px 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-4 reveal">
+                        <div class="title-area"><span class="sub-title text-uppercase">#MetaXgaming</span>
+                            <h2 class="sec-title text-white">How to Play</h2>
+                            <div class="sec-shape">
+                                <div class="sec-shape_bar"></div>
+                                <div class="sec-shape_bar"></div>
+                                <div class="sec-shape_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center" style="flex-wrap: wrap-reverse;">
+                        <div class="col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="feature-media reveal" style="border: 0; padding: 0;">
+                                <div class="media-body widget_categories footer-widget">
+                                    <!-- <h3 class="feature-media_title text-white">Great Tournament</h3> -->
+                                    <ul class="text-white" style="padding-left: -10px;">
+                                        <li><a href="javascript:void(0)" tabindex="0" class="justify">Connect your
+                                                Metamask wallet, Add token <br class=" d-none d-sm-block"> <span
+                                                    class="span"> to
+                                                    Gaming Wallet, And you are ready to play.</span></a></li>
+                                        <li><a href="javascript:void(0)" tabindex="0" class="justify">Winners will be
+                                                rewarded with MXG Token.</a></li>
+                                        <li><a href="javascript:void(0)" tabindex="0" class="justify">Various Games you
+                                                can play and earn.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xxl-6">
+                            <div class="stream-video-slide mb-30 d-flex justify-content-custom  align-items-center"><img loading="lazy" src="assets/img/output-onlinegiftools.gif" style="width: 50%;" alt="About image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- How to play -->
+    <!-- Roadmap -->
+    <div data-overlay="roadmap" data-opacity="7">
+        <div class="parallax" loading="lazy" data-bg-class="bg-title" data-parallax-image="./assets/img/yoru-valorant.gif" style="z-index:-100;" style="position: static;"></div>
+        <section id="road" class="vs-team-wrapper" style="padding: 50px 0px; z-index: 100;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="title-area">
+                            <span class="sub-title text-uppercase">#Welcome to the MetaXgaming</span>
+                            <h2 class="sec-title text-white">Roadmap</h2>
+                            <div class="sec-shape">
+                                <div class="sec-shape_bar"></div>
+                                <div class="sec-shape_bar"></div>
+                                <div class="sec-shape_bar"></div>
+                            </div>
+                            <p class="sec-text text-white pt-4 mt-2">We have aim in mind to change the face of metaverse gaming, MetaXgaming</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="tabslide" class=" mt-5">
+                    <div class="col-12">
+
+                        <div class="row gx-60 mt-5">
+                            <div class="col-xl-7 widget_categories footer-widget">
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X1</span>
+                                </h2>
+                                <div class="sec-shape">
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                </div>
+                                <p class="text-white mt-4"></p>
+                                <p class="text-white"></p>
+                                <div class="text-white">
+                                    <!-- <li><a href="javascript:void(0)">Ancient</a> </li> -->
+                                    <p><span class="rightArrow"></span>Website Launch</p>
+                                    <p><span class="rightArrow"></span>Airdrop and bounty program</p>
+                                    <p><span class="rightArrow"></span>Presale: Min buy 0.1 BNB & Max buy 5.0 BNB</p>
+                                    <p><span class="rightArrow"></span>Airdrop Distribution</p>
+                                    <p><span class="rightArrow"></span>Launching on Pancake Swap.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0">
+                                <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
+                                    <div class="text-white upsidedown ">
+                                        <p><span class="rightArrow"></span>Liquidity will be locked.</p>
+                                        <p><span class="rightArrow"></span>Audit Contract.</p>
+                                        <p><span class="rightArrow"></span>First Burning event of 100 billion tokens.</p>
+                                        <p><span class="rightArrow"></span>Listing on CoinMarketCap, CoinGecko &amp; other CEX</p>
+                                        <p><span class="rightArrow"></span>community growth.</p>
+                                        <p><span class="rightArrow"></span>Social media marketing.</p>
+                                        <p><span class="rightArrow"></span>Influencer marketing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row gx-60 mt-5">
+                            <div class="col-xl-7 widget_categories footer-widget">
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X2</span>
+                                </h2>
+                                <div class="sec-shape">
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                </div>
+                                <p class="text-white mt-4"></p>
+                                <p class="text-white"></p>
+                                <div>
+                                    <p><span class="rightArrow"></span>Second burn event of 100 billion tokens.</p>
+                                    <p><span class="rightArrow"></span>Expanding of development team.</p>
+                                    <p><span class="rightArrow"></span>Development of metacar arena war game start.</p>
+                                    <p><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                    <p><span class="rightArrow"></span>Launching of metacar arena war game.</p>
+                                    <p><span class="rightArrow"></span>Launch of NFT marketplace.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0">
+                                <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
+                                    <div class="text-white upsidedown">
+                                        <p><span class="rightArrow"></span>More CeX listings.</p>
+                                        <p><span class="rightArrow"></span>Development of metacar racing game start.</p>
+                                        <p><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                        <p><span class="rightArrow"></span>Launching of metacar racing game.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row gx-60 mt-5">
+                            <div class="col-xl-7 widget_categories footer-widget">
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X3</span>
+                                </h2>
+                                <div class="sec-shape">
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                    <div class="sec-shape_bar"></div>
+                                </div>
+                                <p class="text-white mt-4"></p>
+                                <p class="text-white"></p>
+                                <div>
+                                    <p><span class="rightArrow"></span>Third burn event of 200 billion tokens.</p>
+                                    <p><span class="rightArrow"></span>Metabattleground game development start.</p>
+                                    <p><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                    <p><span class="rightArrow"></span>Launching of Metabattleground game.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0">
+                                <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
+                                    <div class="upsidedown">
+                                        <p><span class="rightArrow"></span>More CEX listing.</p>
+                                        <p><span class="rightArrow"></span>Development of planet MetaX start.</p>
+                                        <p><span class="rightArrow"></span>Beta testing of planet MetaX.</p>
+                                        <p><span class="rightArrow"></span>Launch of planet MetaX.</p>
+                                        <p><span class="rightArrow"></span>Introduction of metaXgaming blockchain.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Roadmap -->
+
+    <!-- tokenomics -->
+    <div data-overlay="title" data-opacity="95">
+        <div class="parallax" loading="lazy" data-bg-class="bg-title" data-parallax-image="assets/img/bg/home-2-bg-1.jpg" style="position: static;"></div>
+        <section id="tokenomics" class="vs-team-wrapper z-index-common" style="padding: 30px 0px;">
+            <div class="container z-index-common">
+                <div class="row title-area justify-content-lg-between align-items-center text-lg-start">
+                    <div class="col-lg-auto">
+                        <h2 class="sec-title text-white">Tokenomics</h2>
+                        <!-- <h2 class="sec-title-style2">upcoming Battle</h2> -->
+                        <div class="sec-shape">
+                            <div class="sec-shape_bar"></div>
+                            <div class="sec-shape_bar"></div>
+                            <div class="sec-shape_bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-6 mt-20 mt-lg-0">
+                        <p class="mb-0 text-white"></p>
+                    </div>
+                </div>
+                <div class="row align-items-center upsidedown" style="flex-wrap: wrap-reverse;">
+                    <div class="col-lg-4">
+                        <div class="row" data-slide-show="2" data-arrows="true">
+                            <div class="col-12">
+                                <div class="mt-5">
+                                    <table class="info-table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Token Name:</th>
+                                                <td>MetaXgaming</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Symbol:</th>
+                                                <td>MXG</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Platform:</th>
+                                                <td>Binance smartchain(BEP-20)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-center mg-lg-0">
+                        <div class="logo-animator custom-margin">
+                            <div class="">
+                                <img loading="lazy" src="assets/img/tokonomics.gif" alt="MetaXgaming" class="pb-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tokenomics -->
+    </div>
+    <!-- tokenomics -->
+    <!-- tokenomics -->
+    <!-- <div data-overlay="title" data-opacity="95">
+        <div class="parallax" loading="lazy" data-bg-class="bg-title" data-parallax-image="assets/img/bg/home-2-bg-1.jpg" style="position: static;"></div>
+        <section id="tokenomics" class="vs-team-wrapper z-index-common" style="padding: 30px 0px;">
+            <div class="container z-index-common">
+                <div class="row title-area justify-content-lg-between align-items-center text-lg-start">
+                    <div class="col-lg-auto">
+                        <h2 class="sec-title text-white">Tokenomics</h2>
+                        <h2 class="sec-title-style2">upcoming Battle</h2>
+                        <div class="sec-shape">
+                            <div class="sec-shape_bar"></div>
+                            <div class="sec-shape_bar"></div>
+                            <div class="sec-shape_bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-6 mt-20 mt-lg-0">
+                        <p class="mb-0 text-white"></p>
+                    </div>
+                </div>
+                <div class="row align-items-center upsidedown" style="flex-wrap: wrap-reverse;">
+                    <div class="col-lg-8 col-xl-7" style="padding: 0;">
+                        <div class="row" data-slide-show="2" data-arrows="true">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0;">
+                                <div class="team-card" style="padding-top: 33px;">
+                                    <table class="info-table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Token Name:</th>
+                                                <td>MetaXgaming</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Symbol:</th>
+                                                <td>MXG</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Platform:</th>
+                                                <td>Binance smartchain(BEP-20)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>TotalSupply:</th>
+                                                <td>2 Trillion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>presale/IDO:</th>
+                                                <td>600 Billion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dev &amp; Team:</th>
+                                                <td>550 Billion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Referrals, Airdrop &amp; Bounty:</th>
+                                                <td>100 Billion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Marketing:</th>
+                                                <td>50 Billion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Burn:</th>
+                                                <td>400 Billion</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Liquidity:</th>
+                                                <td>300 Billion (Locked)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-5 text-center mg-lg-0">
+                        <div class="logo-animator custom-margin">
+                            <div class="logo-animator_shape shape-1"></div>
+                            <div class="logo-animator_shape shape-1"></div>
+                            <div class="logo-animator_shape shape-2"></div>
+                            <div class="logo-animator_shape shape-3"></div>
+                            <div class="logo-animator_img"><img loading="lazy" src="assets/img/token.png" alt="MetaXgaming" class="pb-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <!-- Tokenomics -->
+    <!-- </div> -->
+    <!-- tokenomics -->
+    <!-- tokenomics -->
+    <div data-opacity="95">
+        <!-- <div class="parallax" loading="lazy" data-bg-class="bg-title" data-parallax-image="./assets/img/Fullpage.gif" style="position: static;"></div> -->
+        <section id="gametokenomics" class="vs-match-wapper z-index-common section-bg-game" style="padding-top: 40px;">
+            <div class="container">
+                <h2 class="sec-title text-white">Game Tokenomics</h2>
+                <div class="sec-shape">
+                    <div class="sec-shape_bar"></div>
+                    <div class="sec-shape_bar"></div>
+                    <div class="sec-shape_bar"></div>
+                </div>
+            </div>
+            <div class="filter-active">
+                <div class="col-lg-12 col-md-12 col-sm-12 filter-item csgo w-100">
+                    <div class="vs-match">
+                        <div class="row justify-content-between align-items-center gx-30">
+
+                            <div class="col-md-6">
+                                <div class="vs-match_content">
+                                    <div class="vs-match_team  widget_categories footer-widget" style="margin-top: 10px;">
+                                        <div>
+                                            <p><span class="rightArrow"></span> From game pool, Winner will be rewarded
+                                                <br class="t-sm-none" />
+                                                <span class=" t-sm-pad"> with MXG Token.</span></p>
+                                            <p><span class="rightArrow"></span>Burn - 10%.</p>
+                                            <p><span class="rightArrow"></span>Redistribution to holders - 12.5%</p>
+                                            <p><span class="rightArrow"></span>Liquidity pool - 12.5%.</p>
+                                            <p><span class="rightArrow"></span>Development of Project - 12.5%.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <img loading="lazy" src="./assets/img/podium.png" style=" width: 30%;" alt="metaxgaming game tokonomics">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="smartcontract">
+
+                            <div class="row">
+                                <div class="mt-5 col-12 d-flex align-items-center flex-column">
+                                    <h5 class="text-center fs-1 mt-5">Partners</h5>
+                                    <div class="col-lg-6 col-md-10 col-sm-12 ">
+
+                                        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                                            <a href="https://coincatapult.com/coin/metaxgaming-mxg" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coincatapult.png" alt="coincatapult Logo">
+                                            </a>
+                                            <a href="https://www.freshcoins.io/coins/metaxgaming" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/freshcoins.png" alt="freshcoins Logo">
+                                            </a>
+                                            <a href="https://coinmooner.com/coin/14454" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coinmooner.png" alt="coinmooner Logo">
+                                            </a>
+                                            <a href="https://coinxhigh.com/todays-best-cryptocurrencies/metaxgaming" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coinxhigh.png" alt="Coin Sniper Logo">
+                                            </a>
+                                            <a href="https://coinhunters.cc/tokens/MetaXgaming" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coinHunters.png" alt="Coin Sniper Logo">
+                                            </a>
+                                            <a href="https://coinsniper.net/coin/28444" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coinsniper.png" alt="Coin Sniper Logo">
+                                            </a>
+                                            <a href="https://www.coinscope.co/coin/mxg" target="_blank" class="">
+                                                <img style="width: 170px;" src="./assets/img/coin-scope.png" alt="Coin Scope logo">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container py-5 px-sm-5" id="smartcontract">
+        <div class="row">
+            <div class="col">
+                <h2 class="fs-3 text-center">Texes</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col py-3">
+                        <h5 class="text-center">TAX WHILE Buying: 8%</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">3% Redistribution</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Liquidity</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col py-3">
+                        <h5 class="text-center">TAX WHILE SELLING: 10% (2% EXTRA FOR SELL TXNS)</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">3% Redistribution</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Liquidity</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Marketing</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-3">
+                            <p class="fs-3 text-center text-dark py-2 m-0">2% Extra for Sell Tex</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tokenomics -->
+    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <div class="row ps-sm-5">
+                <div class="col ms-sm-5 ps-sm-5">
+                    <h2 class="fs-3 text-center">Join Community</h2>
+                </div>
+            </div>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/metaxgame" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/facebook.png" alt="metaxgaming Facebook page Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/metaxgaming" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/instagram.png" alt="metaxgaming instagram page Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/MetaXgaming" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/telegram.png" alt="metaxgaming telegram Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.youtube.com/channel/UC5ZuRG2PujZWHDCuuW5vhVA" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/youtube.png" alt="metaxgaming Youtube Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://twitter.com/Meta_X_Gaming?t=lmZQwN2t_IAYjII7WJjagQ&s=09" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/twitter.png" alt="metaxgaming Twitter Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://discord.gg/b4c5gawrcr" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/discord.png" alt="metaxgaming DIscord Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:Support@metaxgaming.io" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/mail.png" alt="metaxgaming support Email Link">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/MetaXgaming/smart-contract" target="_blank" class="nav-link px-2 text-muted">
+                        <img width="50" loading="lazy" src="assets/img/github.png" alt="metaxgaming github Link">
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center">&copy; 2022 MetaXgaming, All Rights Reserved</p>
+        </footer>
+    </div>
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/vscustom-carousel.min.js"></script>
+    <script src="assets/js/ajax-mail.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let copyBtn = document.querySelector('.copyBtn');
+        copyBtn.addEventListener("click", () => {
+            let contract = document.querySelector('.contract');
+            navigator.clipboard.writeText(contract.innerHTML);
+            copyBtn.innerHTML = 'copied';
+            setTimeout(() => {
+                copyBtn.innerHTML = 'Copy';
+            }, 5000)
+        })
+    </script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        /* Text Selection Colours - JS in Body */
+        let menu = document.querySelectorAll('.vs-mobile-menu ul li a');
+        menu.forEach((item) => {
+            item.addEventListener('click', () => {
+                if (document.querySelector('.vs-menu-wrapper').classList.contains('vs-body-visible')) {
+                    document.querySelector('.vs-menu-wrapper').classList.remove('vs-body-visible');
+                }
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //Disable cut copy paste
+            // $('body').bind('cut copy paste', function(e) {
+            //     e.preventDefault();
+            // });
+            //Disable mouse right click
+            // $("body").on("contextmenu", function(e) {
+            //     return false;
+            // });
+        });
+    </script>
+
+</body>
+
+</html>
