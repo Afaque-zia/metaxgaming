@@ -1,0 +1,485 @@
+:root{
+  --body-font: "Poppins", sans-serif;
+}
+.form {
+  padding: 15px;
+  max-width: 100%;
+  /* background-color: #fff; */
+  /*box-shadow: 0 4px 10px 4px rgba(255, 255, 255, 0.3);*/
+}
+.card {
+    padding: 15px;
+    max-width: 100%;
+}
+
+.top-area {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.top-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-area li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#sign-up {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.top-area .active {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* jhsadkjhfds */
+
+.wallet-adapter-button {
+  background-color: #404144;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.wallet-adapter-button:not([disabled]):focus-visible {
+  outline-color: #fff;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+}
+
+.wallet-adapter-button[disabled] {
+  background: #404144;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.wallet-adapter-button-end-icon,
+.wallet-adapter-button-end-icon img,
+.wallet-adapter-button-start-icon,
+.wallet-adapter-button-start-icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.wallet-adapter-button-end-icon {
+  margin-left: 8px;
+}
+
+.wallet-adapter-button-start-icon {
+  margin-right: 8px;
+}
+
+.wallet-adapter-collapse {
+  width: 100%;
+}
+
+.wallet-adapter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.wallet-adapter-dropdown-list {
+  position: absolute;
+  z-index: 99;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 10px;
+  padding: 10px;
+  top: 100%;
+  right: 0;
+  margin: 0;
+  list-style: none;
+  background: #2c2d30;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s,
+    -webkit-transform 0.2s ease;
+}
+
+.wallet-adapter-dropdown-list-active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.wallet-adapter-dropdown-list-item {
+  background: #404144;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 37px;
+  color: #fff;
+}
+
+.wallet-adapter-dropdown-list-item:not([disabled]):hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+}
+
+.wallet-adapter-modal-collapse-button svg {
+  align-self: center;
+  fill: #999;
+}
+
+.wallet-adapter-modal-collapse-button.wallet-adapter-modal-collapse-button-active
+  svg {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: -webkit-transform 0.15s ease-in;
+  transition: transform 0.15s ease-in;
+  transition: transform 0.15s ease-in, -webkit-transform 0.15s ease-in;
+}
+
+.wallet-adapter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  overflow-y: auto;
+}
+
+.wallet-adapter-modal.wallet-adapter-modal-fade-in {
+  opacity: 1;
+}
+
+.wallet-adapter-modal-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.wallet-adapter-modal-button-close:focus-visible {
+  outline-color: #fff;
+}
+
+.wallet-adapter-modal-button-close svg {
+  fill: #777;
+  transition: fill 0.2s ease 0s;
+}
+
+.wallet-adapter-modal-button-close:hover svg {
+  fill: #fff;
+}
+
+.wallet-adapter-modal-logo {
+  max-width: 100%;
+}
+
+.wallet-adapter-modal-logo-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: #141515;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.wallet-adapter-modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.wallet-adapter-modal-container {
+  display: flex;
+  margin: 3rem;
+  min-height: calc(100vh - 6rem);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .wallet-adapter-modal-container {
+    margin: 1rem;
+    min-height: calc(100vh - 2rem);
+  }
+}
+
+.wallet-adapter-modal-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1050;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #2c2d30;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  font-family: "Inter", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  padding: 40px 20px 20px;
+  flex: 1 1;
+}
+
+.wallet-adapter-modal-wrapper .wallet-adapter-button {
+  width: 100%;
+}
+
+.wallet-adapter-modal-wrapper-no-logo {
+  padding-top: 30px;
+}
+
+.wallet-adapter-modal-title {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 41px;
+  margin-bottom: 27px;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 374px) {
+  .wallet-adapter-modal-title {
+    font-size: 26px;
+  }
+}
+
+.wallet-adapter-modal-list {
+  margin: 0 0 12px;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.wallet-adapter-modal-list li:not(:first-of-type) {
+  margin-top: 12px;
+}
+@media (max-width: 999px) {
+  table a {
+    font-size: 0.5rem !important;
+  }
+}
+@media (min-width: 999px) and (max-width: 1100px) {
+  table a {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Freaquenty asked questions start */
+
+.faq-heading {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 19px;
+  -webkit-transition: text-indent 0.2s;
+  text-indent: 20px;
+  color: rgb(255, 255, 255);
+}
+
+
+.faq-text {
+  font-family: var(--title-font);
+  font-weight: 600;
+  color: #ffffff;
+  width: 95%;
+  padding-left: 0px;
+  margin-bottom: 30px;
+}
+
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  padding-top: 1px;
+  background-color: rgb(255 255 255 / 0%) !important;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 10px;
+  height: 10px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(255, 255, 255, 0.33);
+  border-right: 2px solid rgba(255, 255, 255, 0.33);
+  float: right;
+  position: relative;
+  top: -30px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgba(255, 255, 255, 0)!important;
+  color: #ffffff;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.faq input[type="checkbox"]:checked + .label1 {
+  display: block;
+  background: rgba(0, 0, 0, 0) !important;
+  color: #ffffff!important;
+  height: 300px;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.faq input[type="checkbox"]:checked + .label2{
+  height: 250px;
+}
+.faq input[type="checkbox"]:checked + .label3{
+  height: 213px;
+}
+.faq input[type="checkbox"]:checked + .label4{
+  height: 300px;
+}
+.custom-paddings{
+  padding-top: 300px!important;
+}
+@media (max-width:999px){
+  .custom-paddings{
+    padding-top: 50px!important;
+  }
+}
+@media (min-width:999px){
+  .faq input[type="checkbox"]:checked + .label2{
+    height: 150px;
+  }
+  .faq input[type="checkbox"]:checked + .label3{
+    height: 150px;
+  }
+  .faq input[type="checkbox"]:checked + .label4{
+    height: 180px;
+  }
+}
+.faq input[type="checkbox"]:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: 60px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.faq * p {
+  margin: 7px !important;
+}
+@media (max-width:767px){
+  .faq-heading{
+    font-size: 12px;
+  }
+  .faq input[type="checkbox"]:not(:checked) + label {
+    height: 40px;
+  }
+  .faq input[type="checkbox"]:not(:checked) + .label2 {
+    height: 70px;
+  }
+  .faq input[type="checkbox"]:not(:checked) + .label4 {
+    height: 70px;
+  }
+  .faq-heading {
+    font-size: 15px;
+    text-indent: 0px;
+  }
+  .faq .second-arrow {
+    top: -40px;
+  }
+}
+/* Freaquenty asked questions end */
+.note p{
+  width: 70%!important;
+}
+@media (max-width:999px){
+  .note p{
+    width: 100%!important;
+  }
+}
+.blink-text{
+  opacity: 1;
+  animation: textOpacity 1s ease-in-out 0.2s infinite alternate-reverse;
+}
+@keyframes textOpacity {
+  0%{
+      opacity: 0;
+      transform: scale(100%);
+  }
+  100%{
+      opacity: 1;
+      transform: scale(102%);
+  }
+}

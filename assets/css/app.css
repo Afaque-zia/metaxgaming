@@ -1,0 +1,29 @@
+
+
+.flat-accordion {
+  margin-top: 49px;
+}
+.flat-accordion .flat-toggle .toggle-title {
+  position: relative;
+  padding-left: 49px;
+  margin-bottom: 19px;
+}
+.flat-accordion .flat-toggle .toggle-title::before {
+  content: "\f067"!important;
+  font-family: "Font Awesome 5 Pro"!important;
+  position: absolute;
+  left: 3px!important;
+  top: 4px!important;
+  font-size: 20px!important;
+  font-weight: 500!important;
+}
+.flat-accordion .flat-toggle .toggle-title.active::before {
+  content: "\f068"!important;
+}
+.flat-accordion .flat-toggle .toggle-content {
+  display: none;
+  padding-left: 49px!important;
+  padding-bottom: 29px!important;
+}
+
+/*# sourceMappingURL=app.css.map */
