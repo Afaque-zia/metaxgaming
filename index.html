@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./img/aos.css">
     <style>
         .span {
             display: block;
@@ -53,18 +54,6 @@
             height: 40px;
             width: 40px;
             background: url(./assets/img/nexticon.png) no-repeat top;
-        }
-        
-        .reveal {
-            position: relative;
-            transform: translateY(150px);
-            opacity: 0;
-            transition: 1s all ease;
-        }
-        
-        .reveal.active {
-            transform: translateY(0);
-            opacity: 1;
         }
     </style>
 </head>
@@ -271,7 +260,8 @@
         <!-- <div class="parallax" data-bg-class="bg-title" style="height: 999.75px;" data-parallax-image="assets/img/bg/video-box-1-1.jpg" style="position: static;"></div> -->
         <section class="vs-video-wrapper" style="padding: 0px 0px;">
             <div class="container">
-                <div class="title-area reveal" style="position: relative; z-index: 10000; padding-top: 25px;"><span class="sub-title text-uppercase">#MetaXgaming</span>
+                <div class="title-area" data-aos="zoom-in-right" style="position: relative; z-index: 10000; padding-top: 25px;">
+                    <span class="sub-title text-uppercase">#MetaXgaming</span>
                     <h2 class="sec-title text-white">Mission</h2>
                     <!-- <h2 class="sec-title-style2">upcoming game</h2> -->
                     <div class="sec-shape">
@@ -282,11 +272,11 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-mg-6 col-sm-12">
-                        <div class="release-card mb-20 reveal">
+                        <div class="release-card mb-20">
                             <div class="release-card_img">
                                 <!-- <img src="assets/img/release/released-game-1-1.jpg" alt="Released Image"> -->
                             </div>
-                            <div class="release-card_content" style="display: flex; align-items: start; justify-content: start;  flex-direction: column;">
+                            <div class="release-card_content" data-aos="zoom-in-right" style="display: flex; align-items: start; justify-content: start;  flex-direction: column;">
                                 <p class="release-card_text text-light-white text-justify">The MetaXgaming team will develop planet "MetaX" where players can own virtual land, design and create various buildings and structures, fight for survival and craft a diverse set of items to be sold and traded on the open
                                     markets as NFTs.
                                 </p>
@@ -297,7 +287,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-mg-6 col-sm-12">
-                        <div class="release-card mb-lg-20 reveal">
+                        <div class="release-card mb-lg-20" data-aos="zoom-in-left">
                             <div class="release-card_img" style="display: flex; justify-content: center; align-items: center;">
                                 <img style="width: 70%;" src="assets/img/cropedLogo2.gif" alt="Released Image">
                             </div>
@@ -310,8 +300,8 @@
             <div class="container z-index-common">
                 <div class="row justify-content-center">
                     <div class="col-xl-8">
-                        <div class="vs-carousel" data-slide-show="1" data-md-slide-show="1" id="slideLink1" style="display: flex; justify-content: center; align-items: center;" data-focuson-select="true" data-center-mode="true" data-asnavfor="#slideLink2">
-                            <div class="slide reveal" style="width: 650px;">
+                        <div class="vs-carousel" data-aos="fade-up" data-aos-duration="3000" data-slide-show="1" data-md-slide-show="1" id="slideLink1" style="display: flex; justify-content: center; align-items: center;" data-focuson-select="true" data-center-mode="true" data-asnavfor="#slideLink2">
+                            <div class="slide" style="width: 650px;">
                                 <video style="object-fit: cover; border-radius: 7px;" loop preload='metadata' controls autoplay>
                                     <source src="./assets/video/metaxgaming.mp4" type="video/mp4">
                                 </video>
@@ -353,8 +343,8 @@
         <section id="howtoplay" class="vs-about-wrapper" style="padding: 20px 0px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-4 reveal">
-                        <div class="title-area"><span class="sub-title text-uppercase">#MetaXgaming</span>
+                    <div class="col-xxl-4">
+                        <div class="title-area" data-aos="zoom-in-right"><span class="sub-title text-uppercase">#MetaXgaming</span>
                             <h2 class="sec-title text-white">How to Play</h2>
                             <div class="sec-shape">
                                 <div class="sec-shape_bar"></div>
@@ -365,7 +355,7 @@
                     </div>
 
                     <div class="mt-5 row align-items-center" style="flex-wrap: wrap-reverse;">
-                        <div class="col-md-4 reveal">
+                        <div class="col-md-4" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-duration="500">
                             <div class="feature-media bg-dark mb-30">
                                 <div class="feature-media_icon"><img width="60" src="assets/img/metamask.png" alt="Icon">
                                 </div>
@@ -374,8 +364,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 reveal">
-                            <div class="feature-media bg-dark mb-30">
+                        <div class="col-md-4">
+                            <div class="feature-media bg-dark mb-30" data-aos="fade-up">
                                 <div class="feature-media_icon"><img width="70" src="assets/img/mxg.png" alt="Icon">
                                 </div>
                                 <div class="media-body">
@@ -383,8 +373,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 reveal">
-                            <div class="feature-media bg-dark mb-30">
+                        <div class="col-md-4">
+                            <div class="feature-media bg-dark mb-30" data-aos="fade-left">
                                 <div class="feature-media_icon"><img src="assets/img/icon/features-icon-1-2.png" alt="Icon">
                                 </div>
                                 <div class="media-body">
@@ -393,7 +383,7 @@
                             </div>
                         </div>
                         <!-- <div class="col-lg-6 col-xxl-6">
-                            <div class="reveal stream-video-slide mb-30 d-flex justify-content-custom  align-items-center">
+                            <div class=" stream-video-slide mb-30 d-flex justify-content-custom  align-items-center">
                                 <img loading="lazy" src="assets/img/output-onlinegiftools.gif" style="width: 50%;" alt="About image">
                             </div>
                         </div> -->
@@ -410,20 +400,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-sm-12">
-                        <div class="title-area">
-                            <span class="sub-title text-uppercase reveal">MetaXgaming</span>
-                            <h2 class="sec-title text-white reveal">Roadmap</h2>
-                            <div class="sec-shape reveal">
+                        <div data-aos="zoom-out-right" data-aos="zoom-out-up" class="title-area">
+                            <span class="sub-title text-uppercase">MetaXgaming</span>
+                            <h2 class="sec-title text-white">Roadmap</h2>
+                            <div class="sec-shape">
                                 <div class="sec-shape_bar"></div>
                                 <div class="sec-shape_bar"></div>
                                 <div class="sec-shape_bar"></div>
                             </div>
-                            <p class="sec-text text-white pt-4 mt-2 reveal">We have aim in mind to change the face of metaverse gaming, MetaXgaming</p>
+                            <p class="sec-text text-white pt-4 mt-2">We have aim in mind to change the face of metaverse gaming, MetaXgaming</p>
 
                         </div>
                     </div>
                 </div>
-                <div class="vs-slider-tab mx-auto d-flex flex-wrap mt-5 mt-xl-0 reveal" data-asnavfor="#tabslide">
+                <div class="vs-slider-tab mx-auto d-flex flex-wrap mt-5 mt-xl-0" data-aos="zoom-out-up" data-asnavfor="#tabslide">
                     <button class="tab-btn active">X1</button>
                     <button class="tab-btn">X2</button>
                     <button class="tab-btn">X3</button>
@@ -431,10 +421,10 @@
                 <div id="tabslide" class="vs-carousel mt-5" data-slide-show="1" data-md-slide-show="1" data-speed="800" data-adaptive-height="true" data-infinite="fasle">
                     <div class="col-12">
                         <div class="row gx-60 mt-5">
-                            <div class="col-xl-7 widget_categories footer-widget reveal p-0">
-                                <h2 class="sec-title h3 text-white reveal"><span class="sec-title-style2 text-theme2">X1</span>
+                            <div class="col-xl-7 widget_categories footer-widget p-0" data-aos="zoom-out-right">
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X1</span>
                                 </h2>
-                                <div class="sec-shape reveal">
+                                <div class="sec-shape">
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
@@ -443,24 +433,24 @@
                                 <p class="text-white"></p>
                                 <div class="text-white">
                                     <!-- <li><a href="javascript:void(0)">Ancient</a> </li> -->
-                                    <p class="reveal"><span class="rightArrow"></span>Website Launch</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Airdrop and bounty program</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Presale: Min buy 0.1 BNB & Max buy 5.0 BNB</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Airdrop Distribution</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Launching on Pancake Swap.</p>
+                                    <p class=""><span class="rightArrow"></span>Website Launch</p>
+                                    <p class=""><span class="rightArrow"></span>Airdrop and bounty program</p>
+                                    <p class=""><span class="rightArrow"></span>Presale: Min buy 0.1 BNB & Max buy 5.0 BNB</p>
+                                    <p class=""><span class="rightArrow"></span>Airdrop Distribution</p>
+                                    <p class=""><span class="rightArrow"></span>Launching on Pancake Swap.</p>
                                 </div>
                             </div>
-                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 p-0">
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 p-0" data-aos="zoom-out-right">
                                 <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
                                     <div class="text-white upsidedown ">
-                                        <p class="reveal"><span class="rightArrow"></span>Liquidity will be locked.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Audit Contract.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>First Burning event of 10 billion tokens.
+                                        <p class=""><span class="rightArrow"></span>Liquidity will be locked.</p>
+                                        <p class=""><span class="rightArrow"></span>Audit Contract.</p>
+                                        <p class=""><span class="rightArrow"></span>First Burning event of 10 billion tokens.
                                         </p>
-                                        <p class="reveal"><span class="rightArrow"></span>Listing on CoinMarketCap, CoinGecko &amp; other CEX</p>
-                                        <p class="reveal"><span class="rightArrow"></span>community growth.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Social media marketing.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Influencer marketing.</p>
+                                        <p class=""><span class="rightArrow"></span>Listing on CoinMarketCap, CoinGecko &amp; other CEX</p>
+                                        <p class=""><span class="rightArrow"></span>community growth.</p>
+                                        <p class=""><span class="rightArrow"></span>Social media marketing.</p>
+                                        <p class=""><span class="rightArrow"></span>Influencer marketing.</p>
                                     </div>
                                 </div>
                             </div>
@@ -468,10 +458,10 @@
                     </div>
                     <div class="col-12">
                         <div class="row gx-60 mt-5">
-                            <div class="col-xl-7 widget_categories footer-widget reveal p-0">
-                                <h2 class="sec-title h3 text-white reveal"><span class="sec-title-style2 text-theme2">X2</span>
+                            <div class="col-xl-7 widget_categories footer-widget p-0" data-aos="zoom-out-left">
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X2</span>
                                 </h2>
-                                <div class="sec-shape reveal">
+                                <div class="sec-shape">
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
@@ -479,21 +469,21 @@
                                 <p class="text-white mt-4"></p>
                                 <p class="text-white"></p>
                                 <div>
-                                    <p class="reveal"><span class="rightArrow"></span>Second burn event of 10 billion tokens.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Expanding of development team.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Development of metacar arena war game start.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Beta testing of the game start.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Launching of metacar arena war game.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Launch of NFT marketplace.</p>
+                                    <p class=""><span class="rightArrow"></span>Second burn event of 10 billion tokens.</p>
+                                    <p class=""><span class="rightArrow"></span>Expanding of development team.</p>
+                                    <p class=""><span class="rightArrow"></span>Development of metacar arena war game start.</p>
+                                    <p class=""><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                    <p class=""><span class="rightArrow"></span>Launching of metacar arena war game.</p>
+                                    <p class=""><span class="rightArrow"></span>Launch of NFT marketplace.</p>
                                 </div>
                             </div>
-                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 reveal p-0">
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 p-0" data-aos="zoom-out-left">
                                 <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
                                     <div class="text-white upsidedown">
-                                        <p class="reveal"><span class="rightArrow"></span>More CeX listings.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Development of metacar racing game start.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Beta testing of the game start.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Launching of metacar racing game.</p>
+                                        <p class=""><span class="rightArrow"></span>More CeX listings.</p>
+                                        <p class=""><span class="rightArrow"></span>Development of metacar racing game start.</p>
+                                        <p class=""><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                        <p class=""><span class="rightArrow"></span>Launching of metacar racing game.</p>
                                     </div>
                                 </div>
                             </div>
@@ -502,9 +492,9 @@
                     <div class="col-12">
                         <div class="row gx-60 mt-5">
                             <div class="col-xl-7 widget_categories footer-widget p-0">
-                                <h2 class="sec-title h3 text-white reveal"><span class="sec-title-style2 text-theme2">X3</span>
+                                <h2 class="sec-title h3 text-white"><span class="sec-title-style2 text-theme2">X3</span>
                                 </h2>
-                                <div class="sec-shape reveal">
+                                <div class="sec-shape">
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
                                     <div class="sec-shape_bar"></div>
@@ -512,20 +502,20 @@
                                 <p class="text-white mt-4"></p>
                                 <p class="text-white"></p>
                                 <div>
-                                    <p class="reveal"><span class="rightArrow"></span>Third burn event of 20 billion tokens.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Metabattleground game development start.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Beta testing of the game start.</p>
-                                    <p class="reveal"><span class="rightArrow"></span>Launching of Metabattleground game.</p>
+                                    <p class=""><span class="rightArrow"></span>Third burn event of 20 billion tokens.</p>
+                                    <p class=""><span class="rightArrow"></span>Metabattleground game development start.</p>
+                                    <p class=""><span class="rightArrow"></span>Beta testing of the game start.</p>
+                                    <p class=""><span class="rightArrow"></span>Launching of Metabattleground game.</p>
                                 </div>
                             </div>
-                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 reveal p-0">
+                            <div class="col-xl-5 mb-30 mt-3 mt-lg-0 p-0">
                                 <div class="team-map mt-lg-4 pt-lg-2 widget_categories footer-widget">
                                     <div class="upsidedown">
-                                        <p class="reveal"><span class="rightArrow"></span>More CEX listing.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Development of planet MetaX start.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Beta testing of planet MetaX.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Launch of planet MetaX.</p>
-                                        <p class="reveal"><span class="rightArrow"></span>Introduction of metaXgaming blockchain.</p>
+                                        <p class=""><span class="rightArrow"></span>More CEX listing.</p>
+                                        <p class=""><span class="rightArrow"></span>Development of planet MetaX start.</p>
+                                        <p class=""><span class="rightArrow"></span>Beta testing of planet MetaX.</p>
+                                        <p class=""><span class="rightArrow"></span>Launch of planet MetaX.</p>
+                                        <p class=""><span class="rightArrow"></span>Introduction of metaXgaming blockchain.</p>
                                     </div>
                                 </div>
                             </div>
@@ -543,11 +533,11 @@
         <div class="parallax" loading="lazy" data-bg-class="bg-title" style="position: static; background-color: black;"></div>
         <section id="tokenomics" class="vs-team-wrapper z-index-common" style="padding: 30px 0px;">
             <div class="container z-index-common">
-                <div class="row title-area justify-content-lg-between align-items-center text-lg-start">
+                <div class="row title-area justify-content-lg-between align-items-center text-lg-start" data-aos="zoom-out-right">
                     <div class="col-lg-auto">
-                        <h2 class="sec-title text-white reveal">Tokenomics</h2>
+                        <h2 class="sec-title text-white">Tokenomics</h2>
                         <!-- <h2 class="sec-title-style2">upcoming Battle</h2> -->
-                        <div class="sec-shape reveal">
+                        <div class="sec-shape">
                             <div class="sec-shape_bar"></div>
                             <div class="sec-shape_bar"></div>
                             <div class="sec-shape_bar"></div>
@@ -559,27 +549,27 @@
                 </div>
                 <div class="row align-items-center upsidedown " style="flex-wrap: wrap-reverse;">
                     <div class="col-lg-4">
-                        <div class="row reveal" data-slide-show="2" data-arrows="true">
+                        <div class="row" data-slide-show="2" data-arrows="true">
                             <div class="col-12">
-                                <div class="mt-5">
+                                <div class="mt-5" data-aos="zoom-out-right">
                                     <table class="info-table">
                                         <tbody>
-                                            <tr class="reveal">
+                                            <tr class="">
                                                 <th>Token Name:</th>
                                                 <td>MetaXgaming</td>
                                             </tr>
-                                            <tr class="reveal">
+                                            <tr class="">
                                                 <th>Symbol:</th>
                                                 <td>MXG</td>
                                             </tr>
-                                            <tr class="reveal">
+                                            <tr class="">
                                                 <th>Platform:</th>
                                                 <td>Binance smartchain(BEP-20)</td>
                                             </tr>
-                                            <tr class="reveal">
+                                            <tr class="">
                                                 <th>BSC Chain:</th>
                                                 <td>
-                                                    <a href="https://bscscan.com/address/0xF11eb280b04eeA2016082BBA2Fc09665AB235dd5" target="_blank">View on bscscan</a>
+                                                    <a class="btn btn-warning" href="https://bscscan.com/address/0xF11eb280b04eeA2016082BBA2Fc09665AB235dd5" target="_blank">View on bscscan</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -590,7 +580,7 @@
                     </div>
                     <div class="col-lg-8 text-center mg-lg-0">
                         <div class="logo-animator custom-margin">
-                            <div class="reveal">
+                            <div class="" data-aos="zoom-in-left">
                                 <img loading="lazy" src="assets/img/tokonomics.gif" alt="MetaXgaming" class="pb-1">
                             </div>
                         </div>
@@ -692,9 +682,9 @@
     <div data-opacity="95">
         <!-- <div class="parallax" loading="lazy" data-bg-class="bg-title" data-parallax-image="./assets/img/Fullpage.gif" style="position: static;"></div> -->
         <section id="gametokenomics" class="vs-match-wapper z-index-common section-bg-game" style="padding-top: 40px;">
-            <div class="container">
-                <h2 class="sec-title text-white reveal">Game Tokenomics</h2>
-                <div class="sec-shape reveal">
+            <div class="container" data-aos="zoom-out-right">
+                <h2 class="sec-title text-white">Game Tokenomics</h2>
+                <div class="sec-shape">
                     <div class="sec-shape_bar"></div>
                     <div class="sec-shape_bar"></div>
                     <div class="sec-shape_bar"></div>
@@ -705,23 +695,23 @@
                     <div class="vs-match">
                         <div class="row justify-content-between align-items-center gx-30">
                             <div class="col-md-6">
-                                <div class="vs-match_content">
+                                <div class="vs-match_content" data-aos="zoom-out-right">
                                     <div class="vs-match_team  widget_categories footer-widget" style="margin-top: 10px;">
                                         <div>
-                                            <p class="reveal"><span class="rightArrow"></span> From game pool, Winner will be rewarded
+                                            <p class=""><span class="rightArrow"></span> From game pool, Winner will be rewarded
                                                 <br class="t-sm-none" />
                                                 <span class=" t-sm-pad"> with MXG Token.</span>
                                             </p>
-                                            <p class="reveal"><span class="rightArrow"></span>Burn - 10%.</p>
-                                            <p class="reveal"><span class="rightArrow"></span>Redistribution to holders - 12.5%</p>
-                                            <p class="reveal"><span class="rightArrow"></span>Liquidity pool - 12.5%.</p>
-                                            <p class="reveal"><span class="rightArrow"></span>Development of Project - 12.5%.</p>
+                                            <p class=""><span class="rightArrow"></span>Burn - 10%.</p>
+                                            <p class=""><span class="rightArrow"></span>Redistribution to holders - 12.5%</p>
+                                            <p class=""><span class="rightArrow"></span>Liquidity pool - 12.5%.</p>
+                                            <p class=""><span class="rightArrow"></span>Development of Project - 12.5%.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="d-flex justify-content-center align-items-start reveal">
+                            <div class="col-md-6" data-aos="zoom-out-left">
+                                <div class="d-flex justify-content-center align-items-start">
                                     <img loading="lazy" src="./assets/img/podium.png" style=" width: 30%;" alt="metaxgaming game tokonomics">
                                 </div>
                             </div>
@@ -731,73 +721,73 @@
             </div>
         </section>
     </div>
-    <div class="container" id="smartcontract">
+    <div class="container" id="smartcontract" data-aos="zoom-out-up">
         <div class="row justify-content-center align-items-center">
-            <div class="col-sm-4">
-                <h4 class="widget_title text-center reveal">Smart Contract</h4>
+            <div class="col-sm-4" data-aos="zoom-out-up">
+                <h4 class="widget_title text-center">Smart Contract</h4>
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-sm-6 text-center">
-                <p class="contract text-center reveal" overflow-x:hidden;="">0xF11eb280b04eeA2016082BBA2Fc09665AB235dd5</p>
-                <button class="btn btn-warning copyBtn reveal" style="width:100px;">Copy</button>
+                <p class="contract text-center" overflow-x:hidden;="">0xF11eb280b04eeA2016082BBA2Fc09665AB235dd5</p>
+                <button class="btn btn-warning copyBtn" style="width:100px;">Copy</button>
             </div>
         </div>
     </div>
     <!-- tokenomics -->
     <div class="container py-5 px-sm-5" id="smartcontract">
-        <div class="row  justify-content-center">
+        <div class="row  justify-content-center" data-aos="zoom-out-up">
             <div class="col-sm-4 text-center">
-                <h2 class="fs-3 text-center widget_title reveal">TAXES</h2>
+                <h2 class="fs-3 text-center widget_title">TAXES</h2>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row">
                     <div class="col py-3">
-                        <h5 class="text-center reveal">TAX WHILE Buying: 8%</h5>
+                        <h5 class="text-center">TAX WHILE Buying: 8%</h5>
                     </div>
                 </div>
                 <div class="row justify-content-center g-4">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card reveal p-3">
+                        <div class="card p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class=" fs-3 text-center text-dark py-2 m-0">3% Redistribution</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card reveal p-3">
+                        <div class="card p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class=" fs-3 text-center text-dark py-2 m-0">2.5% for Liquidity</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card reveal p-3">
+                        <div class="card p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class=" fs-3 text-center text-dark py-2 m-0">2.5% for Marketing</p>
                         </div>
                     </div>
                 </div>
-                <div class="row reveal">
-                    <div class="col py-3">
+                <div class="row">
+                    <div class="col py-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <h5 class="text-center">TAX WHILE SELLING: 10% (2% EXTRA FOR SELL TXNS)</h5>
                     </div>
                 </div>
                 <div class="row justify-content-center g-4">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card p-3  reveal">
+                        <div class="card p-3 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class="fs-3 text-center text-dark py-2 m-0">3% Redistribution</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card p-3  reveal">
+                        <div class="card p-3 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Liquidity</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card p-3  reveal">
+                        <div class="card p-3 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class="fs-3 text-center text-dark py-2 m-0">2.5% for Marketing</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card p-3  reveal">
+                        <div class="card p-3 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <p class="fs-3 text-center text-dark py-2 m-0">2% Extra for Sell Tax</p>
                         </div>
                     </div>
@@ -809,8 +799,8 @@
     <!-- Tokenomics -->
     </div>
     <div class="container mb-5" id="smartcontract">
-        <div class="row justify-content-center reveal">
-            <div class="col-sm-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-4" data-aos="zoom-out-up">
                 <h5 class="text-center mt-5 fs-1 widget_title">Partners</h5>
             </div>
         </div>
@@ -819,31 +809,31 @@
                 <div class="col-lg-6 col-md-10 col-sm-12 ">
 
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/coinmarketcap.png" alt="coincatapult Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/coingecko.png" alt="Coin Sniper Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/binancesmartchain.png" alt="Coin Sniper Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/pankaceswap.png" alt="coinmooner Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/poocoin.png" alt="Coin Sniper Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/yahoo-finance.png" alt="Coin Sniper Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/NASDAQ.png" alt="Coin Sniper Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/cyberscope.png" alt="freshcoins Logo">
                         </a>
-                        <a href="" class="mx-4 mb-2 reveal">
+                        <a href="" class="mx-4 mb-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <img style="width: 110px;" src="./img/gempad.png" alt="freshcoins Logo">
                         </a>
                     </div>
@@ -853,13 +843,13 @@
         </div>
     </div>
     <div class="container" id="contact">
-        <footer class="py-3 mt-5 reveal">
+        <footer class="py-3 mt-5">
             <div class="row justify-content-center">
                 <div class="col-sm-4">
                     <h2 class="fs-3 text-center widget_title">Join Community</h2>
                 </div>
             </div>
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3" data-aos="zoom-out-left">
                 <li class="nav-item">
                     <a href="https://www.facebook.com/metaxgame" target="_blank" class="nav-link px-2 text-muted">
                         <img width="50" loading="lazy" src="assets/img/facebook.png" alt="metaxgaming Facebook page Link">
@@ -922,23 +912,6 @@
         })
     </script>
     <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 50;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
         /* Text Selection Colours - JS in Body */
         let menu = document.querySelectorAll('.vs-mobile-menu ul li a');
         menu.forEach((item) => {
@@ -970,6 +943,10 @@
                 return false;
             });
         });
+    </script>
+    <script src="./img/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
