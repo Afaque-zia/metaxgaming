@@ -8557,7 +8557,7 @@ fieldset:disabled .btn {
 }
 
 .fs-3 {
-    font-size: calc(1.3rem + .6vw)!important
+    font-size: calc(1)!important
 }
 
 .fs-4 {
